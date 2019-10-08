@@ -1,0 +1,12 @@
+from employee.base_employee import EmployeeBase
+
+class PermanentEmployee(EmployeeBase):
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def get_bonus(self):
+        return self.salary + 100
+
+
